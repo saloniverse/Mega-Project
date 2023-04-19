@@ -6,7 +6,7 @@ import config from "./src/config/index.js"
 
 ( async () => {
     try{
-        await mongoose.connect(config.MONGODB_URL) // ecommerce is database name
+        await mongoose.connect(config.MONGODB_URL) 
         console.log("DB Connected!");
         app.on('error', (err) => {
             console.error("ERROR: ",err);
